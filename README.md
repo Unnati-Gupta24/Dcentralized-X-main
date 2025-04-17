@@ -113,6 +113,4 @@ JWT_SECRET=""
   <img src="./images/a4.PNG" alt="Post Detail" width="800"/>
   <br/><br/>
   <img src="./images/a5.PNG" alt="Settings Page" width="800"/>
-  <br/><br/>
-  <img src="./videos/14-23-34.mp4" alt="Settings Page" width="800"/>
 </div>
