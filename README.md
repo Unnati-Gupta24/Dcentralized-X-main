@@ -100,3 +100,8 @@ REACT_APP_FIREBASE_APP_ID=""
 DATABASE_URL=""
 JWT_SECRET=""
 ```
+
+### Screenshots
+![DentralPost Login Page](./images/a1.PNG)
+
+
