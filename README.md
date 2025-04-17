@@ -104,4 +104,11 @@ JWT_SECRET=""
 ### Screenshots
 ![DentralPost Login Page](./images/a1.PNG)
 
+![a2](./images/a2.PNG)
+
+![a3](./images/a3.PNG)
+
+![a4](./images/a4.PNG)
+
+![a5](./images/a5.PNG)
 
