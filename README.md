@@ -115,3 +115,9 @@ JWT_SECRET=""
   <img src="./images/a5.PNG" alt="Settings Page" width="800"/>
 </div>
 
+<div align="center">
+  <video width="800" controls>
+    <source src="./videos/14-23-34.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
