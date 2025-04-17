@@ -114,3 +114,6 @@ JWT_SECRET=""
   <br/><br/>
   <img src="./images/a5.PNG" alt="Settings Page" width="800"/>
 </div>
+
+# Working project Vedio--
+[Watch the demo video](https://drive.google.com/file/d/1i0JoI4HRVW6zKm1RYhA_7sxmYlPPn-O1/view?usp=sharing)
