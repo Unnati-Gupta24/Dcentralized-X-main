@@ -16,10 +16,10 @@ const LoginPage = () => {
   const [loginModal, setLoginModal] = useState(false);
   const [loaded, setLoaded] = useState(false);
   const [activeButton, setActiveButton] = useState<ButtonType>(null);
-  
+
   useEffect(() => {
     localStorage.setItem("userID", "");
-    
+
     // Fade-in animation on load
     setTimeout(() => {
       setLoaded(true);
@@ -58,19 +58,23 @@ const LoginPage = () => {
           isVisible={loginModal}
         />
       )}
-      
-      <div className={`w-full min-h-screen bg-black text-white overflow-hidden ${loaded ? 'opacity-100' : 'opacity-0'} transition-all duration-1000`}>
+
+      <div
+        className={`w-full min-h-screen bg-black text-white overflow-hidden ${
+          loaded ? "opacity-100" : "opacity-0"
+        } transition-all duration-1000`}
+      >
         <ToastContainer
           bodyClassName={() =>
             "text-sm font-medium block p-3 bg-gray-900 border-l-4 border-cyan-500"
           }
         />
-        
+
         {/* Animated background elements */}
         <div className="absolute inset-0 overflow-hidden">
           {/* Animated Grid */}
           <div className="absolute inset-0 animated-grid"></div>
-          
+
           {/* Free Speech Animation */}
           <div className="speech-container">
             <div className="speech-bubble speech-1">Free Speech</div>
@@ -81,86 +85,121 @@ const LoginPage = () => {
             <div className="speech-bubble speech-6">Uncensored</div>
             <div className="speech-bubble speech-7">Your Voice Matters</div>
           </div>
-          
+
           {/* Glowing orbs */}
           <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-cyan-500/10 blur-3xl animate-pulse-slow"></div>
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full bg-purple-500/10 blur-3xl animate-pulse-slower"></div>
         </div>
-        
+
         {/* Main content */}
         <div className="relative z-10 w-full h-screen flex items-center justify-center p-4">
           <div className="w-full max-w-6xl flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16">
-            
             {/* Logo section */}
-            <div className="w-full lg:w-1/2 flex items-center justify-center animate-fadeIn" style={{animationDelay: '0.3s'}}>
+            <div
+              className="w-full lg:w-1/2 flex items-center justify-center animate-fadeIn"
+              style={{ animationDelay: "0.3s" }}
+            >
               <div className="relative group">
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full blur-md opacity-70 group-hover:opacity-100 transition-opacity duration-300 scale-105"></div>
-                <img 
-                  src={logo} 
-                  alt="logo" 
+                <img
+                  src={logo}
+                  alt="logo"
                   className="relative z-10 max-w-full w-auto max-h-80 hover:scale-105 transition-transform duration-500"
                 />
               </div>
             </div>
-            
+
             {/* Login form section */}
-            <div className="w-full lg:w-1/2 animate-slideUp" style={{animationDelay: '0.6s'}}>
+            <div
+              className="w-full lg:w-1/2 animate-slideUp"
+              style={{ animationDelay: "0.6s" }}
+            >
               <div className="relative bg-gray-900/70 backdrop-blur-md p-8 rounded-xl shadow-xl">
                 <div className="relative z-10">
                   {/* Heading */}
                   <div className="text-center mb-8">
-                    <h1 className="text-4xl font-bold mb-3 neon-text-cyan animate-textReveal" style={{animationDelay: '0.9s'}}>
+                    <h1
+                      className="text-4xl font-bold mb-3 neon-text-cyan animate-textReveal"
+                      style={{ animationDelay: "0.9s" }}
+                    >
                       Decentralize Your Voice
                     </h1>
-                    <p className="text-lg text-gray-300 font-medium animate-fadeIn" style={{animationDelay: '1.2s'}}>
+                    <p
+                      className="text-lg text-gray-300 font-medium animate-fadeIn"
+                      style={{ animationDelay: "1.2s" }}
+                    >
                       Get started today
                     </p>
                   </div>
-                  
+
                   {/* Buttons */}
                   <div className="space-y-4">
                     <button
                       onClick={handleGoogleAuth}
-                      onMouseEnter={() => handleButtonHover('google')}
+                      onMouseEnter={() => handleButtonHover("google")}
                       onMouseLeave={resetButtonHover}
-                      className={`w-full bg-gray-800 hover:bg-gray-700 text-white py-3 px-4 rounded-lg flex items-center justify-center gap-3 transition-all duration-300 ${activeButton === 'google' ? 'neon-glow-cyan' : ''} animate-fadeIn`}
-                      style={{animationDelay: '1.5s'}}
+                      className={`w-full bg-gray-800 hover:bg-gray-700 text-white py-3 px-4 rounded-lg flex items-center justify-center gap-3 transition-all duration-300 ${
+                        activeButton === "google" ? "neon-glow-cyan" : ""
+                      } animate-fadeIn`}
+                      style={{ animationDelay: "1.5s" }}
                     >
-                      <img src={googlelogo} width={20} alt="google" className="animate-spin-slow" />
+                      <img
+                        src={googlelogo}
+                        width={20}
+                        alt="google"
+                        className="animate-spin-slow"
+                      />
                       <span className="font-medium">Sign up with Google</span>
                     </button>
-                    
+
                     <button
                       onClick={connectWallet}
-                      onMouseEnter={() => handleButtonHover('metamask')}
+                      onMouseEnter={() => handleButtonHover("metamask")}
                       onMouseLeave={resetButtonHover}
-                      className={`w-full bg-gray-800 hover:bg-gray-700 text-white py-3 px-4 rounded-lg flex items-center justify-center gap-3 transition-all duration-300 ${activeButton === 'metamask' ? 'neon-glow-purple' : ''} animate-fadeIn`}
-                      style={{animationDelay: '1.7s'}}
+                      className={`w-full bg-gray-800 hover:bg-gray-700 text-white py-3 px-4 rounded-lg flex items-center justify-center gap-3 transition-all duration-300 ${
+                        activeButton === "metamask" ? "neon-glow-purple" : ""
+                      } animate-fadeIn`}
+                      style={{ animationDelay: "1.5s" }}
                     >
-                      <img src={metamasklogo} width={20} alt="metamask" className="animate-spin-slow" />
+                      <img
+                        src={metamasklogo}
+                        width={20}
+                        alt="metamask"
+                        className="animate-spin-slow"
+                      />
                       <span className="font-medium">Sign up with MetaMask</span>
                     </button>
-                    
-                    <div className="relative my-6 animate-fadeIn" style={{animationDelay: '1.9s'}}>
+
+                    <div
+                      className="relative my-6 animate-fadeIn"
+                      style={{ animationDelay: "1.9s" }}
+                    >
                       <div className="absolute inset-0 flex items-center">
                         <div className="w-full border-t border-gray-700"></div>
                       </div>
                       <div className="relative flex justify-center">
-                        <span className="bg-gray-900 px-4 text-sm text-gray-400">or</span>
+                        <span className="bg-gray-900 px-4 text-sm text-gray-400">
+                          or
+                        </span>
                       </div>
                     </div>
-                    
+
                     <button
                       onClick={toggleRegisterModal}
-                      onMouseEnter={() => handleButtonHover('register')}
+                      onMouseEnter={() => handleButtonHover("register")}
                       onMouseLeave={resetButtonHover}
-                      className={`w-full bg-gradient-to-r from-cyan-600 to-purple-600 hover:from-cyan-500 hover:to-purple-500 text-white py-3 px-4 rounded-lg font-medium transition-all duration-300 ${activeButton === 'register' ? 'neon-glow-multi' : ''} animate-fadeIn`}
-                      style={{animationDelay: '2.1s'}}
+                      className={`w-full bg-gradient-to-r from-cyan-600 to-purple-600 hover:from-cyan-500 hover:to-purple-500 text-white py-3 px-4 rounded-lg font-medium transition-all duration-300 ${
+                        activeButton === "register" ? "neon-glow-multi" : ""
+                      } animate-fadeIn`}
+                      style={{ animationDelay: "2.1s" }}
                     >
                       Register
                     </button>
-                    
-                    <p className="text-center text-gray-400 pt-4 animate-fadeIn" style={{animationDelay: '2.3s'}}>
+
+                    <p
+                      className="text-center text-gray-400 pt-4 animate-fadeIn"
+                      style={{ animationDelay: "2.3s" }}
+                    >
                       Already have an Account?{" "}
                       <button
                         onClick={toggleLoginModal}
@@ -177,7 +216,7 @@ const LoginPage = () => {
           </div>
         </div>
       </div>
-      
+
       <style>
         {`
         /* Fonts */
