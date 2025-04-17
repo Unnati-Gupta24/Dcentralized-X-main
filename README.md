@@ -102,13 +102,16 @@ JWT_SECRET=""
 ```
 
 ### Screenshots
-![DentralPost Login Page](./images/a1.PNG)
 
-![a2](./images/a2.PNG)
-
-![a3](./images/a3.PNG)
-
-![a4](./images/a4.PNG)
-
-![a5](./images/a5.PNG)
+<div align="center">
+  <img src="./images/a1.PNG" alt="DentralPost Login Page" width="800"/>
+  <br/><br/>
+  <img src="./images/a2.PNG" alt="Home Feed" width="800"/>
+  <br/><br/>
+  <img src="./images/a3.PNG" alt="Profile View" width="800"/>
+  <br/><br/>
+  <img src="./images/a4.PNG" alt="Post Detail" width="800"/>
+  <br/><br/>
+  <img src="./images/a5.PNG" alt="Settings Page" width="800"/>
+</div>
 
