@@ -83,6 +83,7 @@ npm run start:dev
 ### Environment Variables
 
 #### Client (.env)
+```
 REACT_APP_UUID_NAMESPACE="" <br>
 REACT_APP_PINATA_API_KEY="" <br>
 REACT_APP_PINATA_API_SECRET="" <br>
@@ -92,7 +93,10 @@ REACT_APP_FIREBASE_PROJECT_ID="" <br>
 REACT_APP_FIREBASE_STORAGE_BUCKET="" <br>
 REACT_APP_FIREBASE_MESSAGING_SENDER_ID="" <br>
 REACT_APP_FIREBASE_APP_ID=""
+```
 
 #### Server (.env)
-DATABASE_URL=""
+```
+DATABASE_URL="" <br>
 JWT_SECRET=""
+```
