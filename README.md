@@ -113,11 +113,6 @@ JWT_SECRET=""
   <img src="./images/a4.PNG" alt="Post Detail" width="800"/>
   <br/><br/>
   <img src="./images/a5.PNG" alt="Settings Page" width="800"/>
-</div>
-
-<div align="center">
-  <video width="800" controls>
-    <source src="./videos/14-23-34.mp4">
-    Your browser does not support the video tag.
-  </video>
+  <br/><br/>
+  <img src="./videos/14-23-34.mp4" alt="Settings Page" width="800"/>
 </div>
