@@ -100,5 +100,23 @@ REACT_APP_FIREBASE_APP_ID=""
 DATABASE_URL=""
 JWT_SECRET=""
 ```
-# Working project Vedio
+# Working project Vedio--
 [Watch the demo video](https://drive.google.com/file/d/1i0JoI4HRVW6zKm1RYhA_7sxmYlPPn-O1/view?usp=sharing)
+
+=======
+
+### Screenshots
+
+<div align="center">
+  <img src="./images/a1.PNG" alt="DentralPost Login Page" width="800"/>
+  <br/><br/>
+  <img src="./images/a2.PNG" alt="Home Feed" width="800"/>
+  <br/><br/>
+  <img src="./images/a3.PNG" alt="Profile View" width="800"/>
+  <br/><br/>
+  <img src="./images/a4.PNG" alt="Post Detail" width="800"/>
+  <br/><br/>
+  <img src="./images/a5.PNG" alt="Settings Page" width="800"/>
+</div>
+>>>>>>> main
+
